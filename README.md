@@ -42,7 +42,7 @@ No need to do anything else.
 If there's any problem, contact me @Jokie on the OneShot Discord.
 
 
-Currently:
+###Currently:
 
 
 -Item/Examining Objects Text - @Klonoa
@@ -50,7 +50,16 @@ Currently:
 
 
 
-CREDITS ATM:
+###CREDITS ATM:
+
+Developed by
+MeltingComet
+Jokie
+CVivian
+Bionic_Dog
+
+"CrackShot" coined by DemonMaxwell
+
 
 
 Bionic_Dog - Face Sprites
