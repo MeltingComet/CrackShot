@@ -17,9 +17,8 @@ Keep all content to at least PG-13, which means anything but NSFW content and re
 
 1. First make sure you have a clean OneShot install on Steam. Right-click on OneShot -> Properties -> Local Files tab -> Verify integrity of game cache
 2. Clone the repository on your computer
-3. Go to the repository, and open the file "b_setup.bat" (Right-click, edit...)
-4. Change `steam=C:\Program Files (x86)\Steam\steamapps\common\OneShot` to the proper steam folder on your computer, save and close
-5. Execute b_setup.bat
+  * (**Do this step ONLY if you installed OneShot in another library than Steam's default one.**) Go to the repository and open `b_setup.bat`, put the path of the steam library that has OneShot after `SET steam=`, for example: `SET steam=G:\SteamLibrary`
+3. Go to the repository and execute b_setup.bat
 
 Now unless you reclone the repository, you won't need to run the setup again.
 
@@ -34,13 +33,18 @@ Before you push changes, you _must_ run "b_pack.bat". It will detect all the fil
 It'll copy those in "Modified", and we only push those files online.
 Unless you know what you're doing, only files from the "Modified" repository should be available to commit.
 
-###Usage
+###Steps to restore the game to vanilla on steam
 
-Open Game.rxproj with RPGXP to modify the game. Once you've done a few changes, make sure to save the project, and start the game in Steam.
+Execute `b_restoreSteam.bat`. This will deleate everything on Steam, and then copy back everything from the "Original" folder. It is better to do this than Steam's "Verify integrity of game cache", because Steam won't delete files you've _added_, and so it will contaminate the "Original" folder down the line.
+
+##Usage
+
+Open Game.rxproj with RPGXP to modify the game. Once you've done a few changes, make sure to save the project, and start the game from Steam.
 No need to do anything else.
 
 If there's any problem, contact me @Jokie on the OneShot Discord.
 
+##About
 
 ###Currently:
 
@@ -48,20 +52,14 @@ If there's any problem, contact me @Jokie on the OneShot Discord.
 -Item/Examining Objects Text - @Klonoa
 
 
-
-
 ###CREDITS ATM:
 
 Developed by
-MeltingComet
-Jokie
-CVivian
-Bionic_Dog
+- MeltingComet
+- Jokie
+- CVivian
+- Bionic_Dog
 
 "CrackShot" coined by DemonMaxwell
 
-
-
 Bionic_Dog - Face Sprites
-
-
